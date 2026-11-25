@@ -7,3 +7,8 @@
 - Selected candidate 5, the shopping-cart wheel rant; rationale recorded in candidates.md.
 - main.py written in two rounds: round 1 a straightforward single-literal writer; round 2 a structural revision (entry assembled from named parts, write_entry helper, main function) with byte-identical output.
 - Verified by running the final main.py: /output/entry.txt matches the selected candidate byte for byte, 398 characters / 400 bytes (the em dash is three UTF-8 bytes), no trailing newline, inside the 400-character gate.
+
+
+## Verification postscript
+
+One last check before submitting: this rant sits exactly at the size cap — 398 characters but 400 bytes in UTF-8, because the em dash costs three bytes instead of one. I ran main.py once more and compared the fresh output against the finalized text; it matched exactly, so nothing changed.
